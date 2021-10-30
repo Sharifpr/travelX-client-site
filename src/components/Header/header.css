@@ -1,0 +1,13 @@
+@media screen and (max-width: 405px) {
+    .navBarBrand span {
+      display: none !important;
+    }
+    .navBarBrand img {
+      width: 80px;
+    }
+  }
+  
+  .hoverStyle:hover {
+    color: #000 !important;
+    transition: 0.3s;
+  }

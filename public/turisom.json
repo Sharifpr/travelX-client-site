@@ -1,0 +1,92 @@
+[
+    {
+        "key": 1,
+        "img": "https://i.ibb.co/FBg73sf/p-2-02c7fd31.png",
+        "title": "Lake Garda, Italy",
+        "price": 29.99,
+        "provider": "Sunnah Trevels",
+        "rating": 5,
+        "ratingCount": "320"
+    },
+    {
+        "key": 2,
+        "img": "https://i.ibb.co/QdsGzdJ/p-3-460015b6.png",
+        "title": "Mount Dtna, Italy",
+        "price": 34.79,
+        "provider": "Sunnah Trevels",
+        "rating": 4.2,
+        "ratingCount": "450"
+    },
+    {
+        "key": 3,
+        "img": "https://i.ibb.co/nDPKxYL/p-4-5a3083bb.png",
+        "title": "Amalfi Costa, Italy",
+        "price": 18.9,
+        "provider": "Sunnah Trevels",
+        "rating": 4,
+        "ratingCount": "680"
+    },
+    {
+        "key": 4,
+        "img": "https://i.ibb.co/P5N9J8V/p-5-194db7b2.png",
+        "title": "French Rivira, France",
+        "price": 48.69,
+        "provider": "Sunnah Trevels",
+        "rating": 3.5,
+        "ratingCount": "350"
+    },
+    {
+        "key": 5,
+        "img": "https://i.ibb.co/QKydWYC/p-6-1c3145eb.png",
+        "title": "Lake Geneva, France",
+        "price": 48.69,
+        "provider": "Sunnah Trevels",
+        "rating": 4.5,
+        "ratingCount": "560"
+    },
+    {
+        "key": 6,
+        "img": "https://i.ibb.co/McJq0JB/offer-1-6af7bd6a-1.png",
+        "title": "Paris Hell Tour",
+        "price": 48.69,
+        "provider": "Sunnah Trevels",
+        "rating": 4.0,
+        "ratingCount": "500"
+    },
+    {
+        "key": 7,
+        "img": "https://i.ibb.co/McJq0JB/offer-1-6af7bd6a-1.png",
+        "title": "Lake Garde,Spain",
+        "price": 42.29,
+        "provider": "Sunnah Trevels",
+        "rating": 3.5,
+        "ratingCount": "500"
+    },
+    {
+        "key": 8,
+        "img": "https://i.ibb.co/2KF7vZg/offer-2-cb8e0907.png",
+        "title": "France Rivira,France",
+        "price": 47.69,
+        "provider": "Sunnah Trevels",
+        "rating": 4.5,
+        "ratingCount": "500"
+    },
+    {
+        "key": 9,
+        "img": "https://i.ibb.co/vPCqbQc/offer-3-81451bfc.png",
+        "title": "Amalifia Costa, Italy",
+        "price": 48.69,
+        "provider": "Sunnah Trevels",
+        "rating": 4.0,
+        "ratingCount": "500"
+    },
+    {
+        "key": 10,
+        "img": "https://i.ibb.co/Ykdx1v4/p-1-43d43fdd.png",
+        "title": "Mount Dtna, Brazil",
+        "price": 85.69,
+        "provider": "Sunnah Trevels",
+        "rating": 4.0,
+        "ratingCount": "500"
+    }
+]
