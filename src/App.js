@@ -16,6 +16,7 @@ import PackageDetails from "./components/PackageDetails/PackageDetails";
 // import Cart from "./components/Cart/Cart";
 import Login from "./components/Login/Login";
 import Dashboard from "./components/Dashboard/Dashboard";
+import Admin from "./components/Admin/Admin";
 // import Cart from "./components/Cart/Cart";
 
 function App() {
@@ -40,8 +41,11 @@ function App() {
             <Route exact path="/packages">
               <Packages></Packages>
             </Route>
+            <Route exact path="/admin">
+              <Admin></Admin>
+            </Route>
 
-            <Route path="/packages/:_id">
+            <Route path="/packages/:id">
               <PackageDetails></PackageDetails>
             </Route>
 

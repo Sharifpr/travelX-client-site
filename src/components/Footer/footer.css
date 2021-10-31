@@ -1,0 +1,32 @@
+.section-footer ul li {
+    margin-bottom: 5px;
+  }
+  
+  .section-footer ul a {
+    color: wheat;
+    text-decoration: none;
+  }
+  
+  .section-footer ul a:hover {
+    color: #101010;
+  }
+  
+  .section-footer .logo-footer {
+    height: 40px;
+  }
+  
+  .section-footer .title {
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #f8fafd;
+  }
+  
+  .footer-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .footer-copyright {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }

@@ -1,6 +1,19 @@
 .App {
   text-align: center;
 }
+.cart-style{
+  border: 0px !important;
+ 
+}
+
+
+.buy-btn {
+  font-weight: 500 !important;
+  border-radius: 10px !important;
+  border: none !important;
+  background-color: #ff4b2b !important;
+  padding: 12px 35px !;
+}
 
 .App-logo {
   height: 40vmin;

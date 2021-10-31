@@ -10,17 +10,17 @@ import { NavLink } from "react-router-dom";
 
 const Cart = () => {
     const history = useHistory()
-    const { selectedPackage, setSelectedPackage, removeItem, AllContexts } = useAuth();
+    const { selectedPackage, setSelectedPackage, AllContexts } = useAuth();
     const { user } = AllContexts;
     const { uid } = user;
     const totalCost = selectedPackage.reduce(
-        (previous, tour) => previous + tour.price,
-        0
+        (previous, tour) => previous + tour.price, 0
     );
 
+    // console.log(selectedPackage);
 
     const handleRemove = id => {
-        console.log(id);
+        // console.log(id);
         fetch(`https://ancient-temple-97023.herokuapp.com/delete/${id}`, {
             method: "delete"
         })
@@ -43,7 +43,7 @@ const Cart = () => {
                     <Row>
                         <Col md={8}>
                             {selectedPackage.map((tour) => (
-                                <Row className="bg-info my-3">
+                                <Row key={tour._id} className="bg-info my-3">
                                     <Col
                                         className="p-0 d-flex align-items-center justify-content-center"
                                         md={4}
@@ -74,7 +74,7 @@ const Cart = () => {
                                                     </Col>
                                                     <Col className="d-flex align-items-center">
                                                         <NavLink
-                                                            to={`/packages/${tour._id}`}
+                                                            to={`/packages/${tour?._id}`}
                                                             className="w-50 btn py-2 btn-primary"
                                                         >
                                                             View Details
@@ -100,18 +100,18 @@ const Cart = () => {
                         >
                             <div className="text-center my-2">
                                 <h3>Total {selectedPackage.length} tour Selected</h3>
-                                <h4>Cost: {totalCost}$</h4>
+
                                 <button
 
                                     onClick={() => {
-                                        fetch(`https://ancient-temple-97023.herokuapp.com/purchase${uid}`, {
+                                        fetch(`https://ancient-temple-97023.herokuapp.com/purchase/${uid}`, {
                                             method: "delete"
                                         })
                                             .then(res => res.json())
                                             .then(data => {
                                                 if (data.deletedCount > 0) {
 
-                                                    alert("Thanks for purchasing!!");
+                                                    alert("Thanks for chackout this tour!!");
                                                     setSelectedPackage([]);
                                                     history.push('/home')
                                                 }

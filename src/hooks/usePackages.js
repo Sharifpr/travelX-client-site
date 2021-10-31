@@ -17,6 +17,7 @@ const usePackages = () => {
                 setTotalPage(pages);
             });
     }, [currentPage]);
+
     return { packages, setPackages, totalPage, currentPage, setCurrentPage };
 };
 

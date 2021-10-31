@@ -10,7 +10,7 @@ const Profile = () => {
         <div>
             <h1 className="text-center">Pofile</h1>
             <div className="container ">
-                <Row>
+                <Row className="d-flex align-items-center">
                     <Col md={4}>
                         <div className='text-center d-flex flex-column align-items-center'>
                             <img src={photoURL} width="200px" className="rounded-circle" alt="" />
@@ -19,10 +19,10 @@ const Profile = () => {
 
                     </Col>
                     <Col md={8}>
-                        <h4>Name</h4>
-                        <h3>{displayName}</h3>
-                        <h6>Email</h6>
-                        <h6>{email}</h6>
+                        <h3>Full Name</h3>
+                        <h5>{displayName}</h5>
+                        <h3>Email Address</h3>
+                        <h5>{email}</h5>
                     </Col>
                 </Row>
             </div>

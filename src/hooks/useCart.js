@@ -4,12 +4,11 @@ import useFirebase from "./useFirebase.js";
 
 const useCart = () => {
     const { user } = useFirebase();
-
-    const { uid } = user;
-
+    const { uid, displayName, email } = user;
     const [selectedPackage, setSelectedPackage] = useState([]);
 
     useEffect(() => {
+
         fetch(`https://ancient-temple-97023.herokuapp.com/cart/${uid}`)
             .then((res) => res.json())
             .then((data) => {
@@ -17,7 +16,7 @@ const useCart = () => {
                     setSelectedPackage(data);
                 }
             });
-        setSelectedPackage([])
+
     }, [uid]);
 
     function addToCart(tour) {
@@ -26,15 +25,17 @@ const useCart = () => {
         );
         delete tour._id;
         tour.uid = uid;
+        tour.name = displayName;
+        tour.email = email;
         tour.status = "pending";
 
         if (isHave) {
             alert("package has been selected!");
         } else {
             fetch("https://ancient-temple-97023.herokuapp.com/package/add", {
-                method: "post",
+                method: "POST",
                 headers: { "content-type": "application/json" },
-                body: JSON.stringify(tour),
+                body: JSON.stringify(tour)
             })
                 .then((res) => res.json())
                 .then((data) => {

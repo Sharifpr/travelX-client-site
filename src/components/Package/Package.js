@@ -14,14 +14,11 @@ import { NavLink } from "react-router-dom";
 library.add(fullStar, emptyStar);
 
 function Package(props) {
-    const history = useHistory()
+    const history = useHistory();
     const { _id, img, title, price, provider, rating, ratingCount } = props.tour;
 
     const { addToCart, AllContexts } = useAuth();
     const { user } = AllContexts;
-
-    console.log(user);
-
     const { uid } = user;
 
     return (
@@ -67,7 +64,7 @@ function Package(props) {
                                 className="w-50 ms-1"
                                 variant="primary"
                             >
-                                Add to Cart
+                                Book Now
                             </Button>
                         </div>
                     </Card.Body>

@@ -12,29 +12,19 @@ const About = () => {
             <Container>
                 <Zoom>
                     <h2 className="text-center text-white mb-4">
-                        WELCOME TO CODING CLUB INSTITUTE
+                        WELCOME TO OUR TREAVELX TURISOM WORLD
                     </h2>
                 </Zoom>
                 <Row>
                     <Col md className="pe-3">
                         <Bounce bottom>
-                            <h5 className="text-white">About Us</h5>
+                            <h5 className="text-white">We Provide Solutions</h5>
+
                             <p className="text-muted">
-                                There are countless online education marketplaces on the
-                                internet. And there’s us. We are not the biggest. We are not the
-                                cheapest. But we are the fastest growing. We have the highest
-                                course completion rate in the industry.
+                                Travelex Travels & Tours acquired IATA status within six months and placed itself to offer unmatched service for the thriving tourism market. The company worked hard to build a reputation in the already competitive market to become a trusted supplier for those who wish to explore the freshest destinations of the world.
                             </p>
                             <p className="text-muted">
-                                And the reason is, we don’t give up. When a student commits to a
-                                course, we commit to the student. We are not going to sugar coat
-                                it - we will make you complete, come what may. You may not have
-                                given much thought to what you are signing up for, but we
-                                believe you are signing up for knowledge that is useful and
-                                complete. We are ridiculously committed to our students. Be it
-                                constant reminders, relentless masters or 24 x 7 online support
-                                - we will absolutely make sure that you run out of excuses to
-                                not complete the course.
+                                Over a twelve year period, Dubai became famous as one of the premier tourist city in the world and we made most of its popularity by surfing the wave of its newly found fame. From pristine beaches and supreme hotels to first-rate shopping and excellent sporting facilities, we can offer all that Dubai is well known for and has become synonymous with in the region. We warmly welcome the international traveler to sample our hospitality and at the same time invite them to experience our unique way of client interaction with a focus on long lasting friendships.
                             </p>
                         </Bounce>
                     </Col>
@@ -42,18 +32,13 @@ const About = () => {
                         <Bounce bottom>
                             <h5 className="text-white">Our Vision</h5>
                             <p className="text-muted">
-                                To become the largest online learning ecosystem for continuing
-                                education, in partnership with corporates and academia.
+                                Travelling and Preserving Mother Nature, Hand in Hand!
                             </p>
                             <h5 className="text-white">Our Mission</h5>
                             <p className="text-muted">
-                                To create an alternate platform for students who wish to
-                                continue and complete courses by attending live online courses,
-                                using a team of ridiculously committed educators who will stop
-                                at nothing to impart education, helped by a 24 x 7 support
-                                system. By deploying our world class team of industry experts,
-                                we aim to educate our learners with the skills they need to
-                                advance their professional life to the next level.
+                                Travelex Travels & tours would like to play its part in bringing awareness in the industry by introducing responsible travel, more lately known as ‘Ecotourism’.
+
+                                As technology advances, the environment is constantly challenged to keep up with the waste produced due to travel. Dwindling water supply, damage to the ozone layer, recycling of waste and long term sustainability in tourism, we are persistently confronted to search for solutions. Travelex Travels & Tours would like to play its part by educating the customer without forgoing the joys of travel. As a result, travelling becomes more fulﬁlling and rewarding when a thought is spared for the coming generations. We invite all environmental conscious people to join us in this endeavor by contributing to our blog. Let us work together for a healthier tomorrow.
                             </p>
                         </Bounce>
                     </Col>

@@ -1,16 +1,16 @@
 import "./header.css";
 import React from "react";
-import { Badge, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import useAuth from "../../hooks/useAuth";
 
 const Header = () => {
 
-    const { AllContexts, selectedPackage } = useAuth();
+    const { AllContexts } = useAuth();
     const { user, logOut } = AllContexts;
+
+    const { uid } = user;
 
     const active = {
         color: "#ff136f",
@@ -102,7 +102,7 @@ const Header = () => {
                                                 <p>{user.displayName}</p>
                                                 <p>{user.email}</p>
                                                 <div className="text-center">
-                                                    <button onClick={logOut} className="btn btn-primary">
+                                                    <button onClick={logOut} className="btn btn-primary rounded-pill">
                                                         Log Out
                                                     </button>
                                                 </div>
@@ -131,11 +131,24 @@ const Header = () => {
                                     </NavLink>
                                 </>
                             )}
+
+                            {
+                                uid === "nDASLhC86sgRx0abQ3uJDj1I4t53" &&
+                                < NavLink
+                                    className="hoverStyle"
+                                    style={navStyle}
+                                    activeStyle={active}
+                                    to="/admin"
+                                >
+                                    Admin
+                                </NavLink>
+
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+        </div >
     );
 };
 
