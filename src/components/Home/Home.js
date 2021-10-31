@@ -7,19 +7,22 @@ import Package from '../Package/Package'
 import Bounce from "react-reveal/Bounce";
 import Slide from "react-reveal/Slide";
 import image01 from '../../assets/images/b-1.64c64476.png';
-
+import PuffLoader from "react-spinners/PuffLoader";
 // import usePackages from "../../hooks/usePackages";
 import useAuth from "../../hooks/useAuth";
 import Services from "../Services/Services";
 import Accordian from "../Accordian/Accordian";
 
+
 const Home = () => {
     const history = useHistory();
-    const { packages } = useAuth();
+    const { packages, loading, setloading, loaderStyle } = useAuth();
+
     const featurePackages = packages.slice(0, 6);
 
     function GoServices() {
         history.push("/packages");
+        setloading(false)
     }
 
     return (
@@ -74,6 +77,7 @@ const Home = () => {
                             try to grow up your skills.
                         </p>
                     </Slide>
+                    <PuffLoader loading={loading} css={loaderStyle} color={"#ecf0f1"} size={150} />
                     <Row>
                         {featurePackages?.map((tour) => (
                             <Package tour={tour} key={tour.key}></Package>

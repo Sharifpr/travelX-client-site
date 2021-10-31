@@ -4,6 +4,16 @@ const usePackages = () => {
     const [packages, setPackages] = useState([]);
     const [totalPage, setTotalPage] = useState(0);
     const [currentPage, setCurrentPage] = useState(0);
+    const [loading, setLoading] = useState(true);
+
+
+    const loaderStyle = `
+display: block;
+margin: auto;
+
+`;
+
+
 
     const size = 6;
 
@@ -15,10 +25,11 @@ const usePackages = () => {
                 const totalData = data.count;
                 const pages = Math.ceil(totalData / size);
                 setTotalPage(pages);
+                setLoading(false)
             });
     }, [currentPage]);
 
-    return { packages, setPackages, totalPage, currentPage, setCurrentPage };
+    return { loading, packages, loaderStyle, setPackages, totalPage, currentPage, setCurrentPage };
 };
 
 export default usePackages;
